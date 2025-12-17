@@ -49,7 +49,7 @@ git set up:
 in the terminal
 
 git clone https://github.com/W23021055/WasteNot
-cd waste-not
+cd WasteNot
 
 npm install react react-dom react-router-dom lucide-react
 npm install -D vite tailwindcss postcss autoprefixer vite-plugin-pwa
