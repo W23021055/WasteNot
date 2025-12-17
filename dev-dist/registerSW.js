@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/kv6014/Waste-not/dev-sw.js?dev-sw', { scope: '/kv6014/Waste-not/', type: 'classic' })

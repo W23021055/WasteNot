@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/kv6014/Waste-not/sw.js', { scope: '/kv6014/Waste-not/' })})}
