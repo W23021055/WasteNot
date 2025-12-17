@@ -43,11 +43,12 @@ Class C: CLA-8921
 link to demo:
 https://w23021055.nuwebspace.co.uk/kv6014/Waste-not/
 link to git:
+https://github.com/W23021055/WasteNot
 
 git set up:
 in the terminal
 
-git clone <your-repo-link>
+git clone https://github.com/W23021055/WasteNot
 cd waste-not
 
 npm install react react-dom react-router-dom lucide-react
