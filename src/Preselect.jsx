@@ -32,7 +32,10 @@ export default function PreSelect() {
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <button
-            onClick={() => handleSelect("school")}
+            onClick={() =>{ 
+              handleSelect("school");
+              initializeLocalStorage();
+            }}
             className="bg-[#7bb241] text-white font-semibold text-xl px-8 py-3 rounded-full shadow-lg hover:scale-105 transition"
           >
             At school

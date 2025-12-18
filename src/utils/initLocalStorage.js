@@ -1,4 +1,10 @@
 export function initializeLocalStorage(reset = false) {
+  const alreadyInitialized = localStorage.getItem("initialized");
+  
+  // if already intialized and not calling for a reset do nothing
+  if (alreadyInitialized && !reset) {
+    return; 
+  }
   // clears local storage
   if (reset === true){
     localStorage.clear();
