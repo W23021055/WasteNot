@@ -16,7 +16,7 @@ function saveUsers(users) {
   localStorage.setItem("users", JSON.stringify(users));
 }
 
-export async function registerAccount(email, username, password) {
+export async function registerAccount(email, username, password, role) {
   if (!meetsPolicy(password)) throw new Error('Password does not meet policy');
 
   const users = getUsers();
@@ -27,8 +27,18 @@ export async function registerAccount(email, username, password) {
     throw new Error("Email already exists");
   }
 
-  users.push({ email, username, password });
+  const fullUser = {
+    email,
+    username,
+    password,
+    role,
+    leaderboards: [],
+    achievements: [],
+  };
+
+  users.push(fullUser);
   saveUsers(users);
+  localStorage.setItem("currentUser", JSON.stringify(fullUser));
 
   // console.log('email, username and password saved');
   return { status: 'ok' };

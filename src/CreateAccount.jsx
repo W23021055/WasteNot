@@ -17,12 +17,13 @@ export default function CreateAccount() {
   // Input handling
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStrength(evaluatePasswordStrength(password));
+
     // checks all fields are filled
     if (!email || !username || !password || !role) {
       alert("Please fill all fields and select your role.");
       return;
     }
+
     // checks password is strong enough
     if (!meetsPolicy(password)) {
       alert("Password does not meet policy (≥8 chars, upper/lower, number, symbol)");
@@ -31,20 +32,7 @@ export default function CreateAccount() {
 
     // register check
     try {
-      await registerAccount(email, username, password);
-
-      const users = JSON.parse(localStorage.getItem("users")) || [];
-      const fullUser = {
-        email,
-        username,
-        password,
-        role,
-        leaderboards: [],
-        achievements: [],
-      };
-      // adds user to storage
-      localStorage.setItem("users", JSON.stringify([...users, fullUser]));
-      localStorage.setItem("currentUser", JSON.stringify(fullUser));
+      await registerAccount(email, username, password, role);
       navigate("/otp");
     } catch (err) {
       alert(err.message);
