@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { initializeLocalStorage } from "./utils/initLocalStorage";
 import LightBackground from "./assets/Light Background.png";
 
 export default function PreSelect() {
@@ -37,7 +38,10 @@ export default function PreSelect() {
             At school
           </button>
           <button
-            onClick={() => handleSelect("home")}
+            onClick={() => {
+              handleSelect("home");
+              initializeLocalStorage();
+            }}
             className="bg-[#d81b60] text-white font-semibold text-xl px-8 py-3 rounded-full shadow-lg hover:scale-105 transition"
           >
             At home

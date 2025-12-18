@@ -1,6 +1,11 @@
 READ ME
 
-Logins:
+On the first page you will come across the selection of at home or at school functionally they are the same in the demo so click either (using them to go to the sign in page is what sets up your data for accounts).
+
+Login:
+
+For logging in you can log in using these accounts.
+If the account log ins dont work use reset data button and try again.
 
 Parent:
 Username: ParentPat
@@ -39,6 +44,8 @@ Leaderboard Join Codes:
 Class A: CLA-2715
 Class B: CLA-5804
 Class C: CLA-8921
+
+for create an account:
 
 link to demo:
 https://w23021055.nuwebspace.co.uk/kv6014/Waste-not/
