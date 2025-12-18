@@ -7,6 +7,10 @@ Login:
 For logging in you can log in using these accounts.
 If the account log ins dont work use reset data button and try again.
 
+Teacher accounts have access to creating leaderboards on the account page.
+Parent accounts have access to their childs leaderboards and the ability to link a child on the account page.
+Students accounts have access to joining leaderboards on the account page.
+
 Parent:
 Username: ParentPat
 Password: ParentPass1!
@@ -46,6 +50,9 @@ Class B: CLA-5804
 Class C: CLA-8921
 
 for create an account:
+Email and username must not be already taken.
+Email must use @.
+Password must meet standards of greater than 8 characters, has a capital letter, has a lowercase letter, has a number and has a special character.
 
 link to demo:
 https://w23021055.nuwebspace.co.uk/kv6014/Waste-not/

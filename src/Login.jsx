@@ -54,7 +54,7 @@ export default function Login() {
         "This will erase all progress and restore default demo data.\nAre you sure you want to continue?"
       )
     ) {
-      initializeLocalStorage("yes");
+      initializeLocalStorage(true);
       alert("Data has been reset to default!");
       window.location.reload();
     }

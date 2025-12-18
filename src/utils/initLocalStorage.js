@@ -1,6 +1,6 @@
-export function initializeLocalStorage(reset) {
+export function initializeLocalStorage(reset = false) {
   // clears local storage
-  if (reset = yes){
+  if (reset === true){
     localStorage.clear();
   }
   // sets up users for demo
